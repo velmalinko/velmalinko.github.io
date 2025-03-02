@@ -18,15 +18,16 @@ function startCountdown(targetDate) {
 startCountdown(new Date("March 7, 2025 18:30:00").getTime());
 
 function createSnowflakes() {
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 10; i++) { // Reduced the number of snowflakes to 10
       let snowflake = document.createElement('div');
       snowflake.classList.add('snowflake');
       snowflake.innerHTML = '❄';
       document.body.appendChild(snowflake);
       snowflake.style.left = Math.random() * window.innerWidth + 'px';
-      snowflake.style.animationDuration = (Math.random() * 3 + 2) + 's';
+      snowflake.style.top = -Math.random() * 50 + 'px'; // Start above the web view
+      snowflake.style.animationDuration = (Math.random() * 5 + 5) + 's'; // Slowed down the fall duration
       snowflake.style.fontSize = (Math.random() * 1.5 + 0.5) + 'rem';
-      setTimeout(() => snowflake.remove(), 5000);
+      setTimeout(() => snowflake.remove(), 15000); // Increased the duration to 15 seconds
   }
 }
 setInterval(createSnowflakes, 500);

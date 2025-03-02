@@ -18,7 +18,7 @@ function startCountdown(targetDate) {
 startCountdown(new Date("March 7, 2025 18:30:00").getTime());
 
 function createSnowflakes() {
-  for (let i = 0; i < 10; i++) { // Reduced the number of snowflakes to 10
+  for (let i = 0; i < 5; i++) { // Reduced the number of snowflakes to 5
       let snowflake = document.createElement('div');
       snowflake.classList.add('snowflake');
       snowflake.innerHTML = '❄';

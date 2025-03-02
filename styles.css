@@ -42,3 +42,9 @@
             0% { transform: translateY(0); }
             100% { transform: translateY(100vh); }
         }
+
+        @media (max-width: 768px) {
+          body {
+            background-attachment: scroll;
+          }
+        }

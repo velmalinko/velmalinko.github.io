@@ -1,9 +1,5 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Pirata One', cursive; }
         body {
-            background: url('Materials/taustakuva.jpg') no-repeat center center/cover;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -11,6 +7,15 @@
             overflow: hidden;
             position: relative;
         }
+        .background {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: url('Materials/taustakuva.jpg') no-repeat center center/cover;
+          z-index: -1;
+        }      
         .countdown-container {
             background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(10px);

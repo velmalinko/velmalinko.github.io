@@ -15,7 +15,7 @@ function startCountdown(targetDate) {
   updateTimer();
   setInterval(updateTimer, 1000);
 }
-startCountdown(new Date("March 7, 2025 18:30:00").getTime());
+startCountdown(new Date("May 1, 2025 00:00:00").getTime());
 
 function createSnowflakes() {
   for (let i = 0; i < 5; i++) { // Reduced the number of snowflakes to 5
@@ -30,4 +30,4 @@ function createSnowflakes() {
       setTimeout(() => snowflake.remove(), 15000); // Increased the duration to 15 seconds
   }
 }
-setInterval(createSnowflakes, 500);
+// setInterval(createSnowflakes, 500);

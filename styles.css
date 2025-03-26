@@ -22,6 +22,15 @@ body {
     margin: 0;
 }
 
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 /* Basic styling for headings */
 h1 {
     color: #DCDCDC;

@@ -1,0 +1,68 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101010;
+    color: #dcdcdc;
+}
+
+/* Basic styling for headings */
+h1 {
+    color: #DCDCDC;
+    text-align: center;
+    font-family: "Stretch Pro";
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h2 {
+    color: #DCDCDC;
+    text-align: center;
+    font-family: "Stretch Pro";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+    font-family: "Stretch Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Basic styling for paragraphs */
+p {
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto Mono";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Basic styling for links */
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: "Stretch Pro";
+    font-size: 30px;
+}

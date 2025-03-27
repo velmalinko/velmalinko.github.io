@@ -1,0 +1,2 @@
+# ei lisätä node_modules -kansiota gittiin (koska se on iso ja käyttäjä generoi sen helposti itse)
+node_modules

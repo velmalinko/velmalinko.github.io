@@ -110,7 +110,8 @@ a {
 
 .hero_logo {
     position: absolute;
-    left: 10%;
+    left: 8%;
+    right: 8%;
     top: 17rem;
     z-index: 100;
 }

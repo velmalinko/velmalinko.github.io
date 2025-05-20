@@ -16,10 +16,18 @@
         </div>
     </nav>
     <main>
-        <div class="hero_Shade"></div>
         <section id="gallery">
-            <p>Under construction...</p>
-            <!-- Gallery content will go here -->
+            <div class="gallery-grid">
+                <img src="images/Interstellar.JPG" alt="Interstellar" class="gallery-item">
+                <img src="images/Marimekko.JPG" alt="Marimekko" class="gallery-item">
+                <img src="images/Siili.JPG" alt="Siili" class="gallery-item">
+                <img src="images/Tuomiokirkko.JPG" alt="Tuomiokirkko" class="gallery-item">
+            </div>
+            <!-- Modal for enlarged image -->
+            <div id="modal" class="modal">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <img class="modal-content" id="modalImg">
+            </div>
         </section>
     </main>
     <footer>
@@ -43,5 +51,24 @@
             </div>
         </div>
     </footer>
+    <script>
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', function() {
+        document.getElementById('modal').style.display = 'flex';
+        document.getElementById('modalImg').src = this.src;
+        document.getElementById('modalImg').alt = this.alt;
+      });
+    });
+
+    document.getElementById('closeModal').onclick = function() {
+      document.getElementById('modal').style.display = 'none';
+    };
+
+    window.onclick = function(event) {
+      if (event.target == document.getElementById('modal')) {
+        document.getElementById('modal').style.display = 'none';
+      }
+    };
+    </script>
 </body>
 </html>
